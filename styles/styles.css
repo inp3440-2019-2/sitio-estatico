@@ -1,0 +1,68 @@
+/* Estilos generales */
+
+body {
+  font-size: 24px;
+}
+
+p {
+  color: red;
+}
+
+a {
+  color: #CCC;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header */
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main > article, main > aside {
+  border: 2px solid #CCC;
+  padding: 20px;
+}
+
+.main-nav  {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Main */
+
+#main-title {
+  background-color: yellow;
+  font-size: 36px;
+  text-align: center;
+}
+
+.paragraph-class {
+  color: black;
+}
+
+.secondary-section .column ul,
+.secondary-section .column p {
+  width: 50%;
+  background-color: rgba(170, 170, 170, 0.4);
+  color: yellow;
+}
+
+.secondary-section li {
+  color: blue;
+  font-size: 24px;
+}
+
+.column {
+  display: flex;
+}

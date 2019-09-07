@@ -3,16 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Sitio estático</title>
+    <link href="styles/styles.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <img src="images/antenna-602142_640.png" width="50" alt="Ejercicio sitio estático">
       <nav>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
+        <ul class="main-nav">
+          <li>
+            <a href="">Item 1</a>
+          </li>
+          <li>
+            <a href="">Item 2</a>
+          </li>
+          <li>
+            <a href="">Item 3</a>
+          </li>
+          <li>
+            <a href="">Item 4</a>
+          </li>
         </ul>
       </nav>
       <form>
@@ -23,13 +32,13 @@
     <main>
       <article>
         <section>
-          <h1>Great title</h1>
+          <h1 id="main-title">Great title</h1>
           <p>Subtitle</p>
           <p>Date</p>
           <img src="images/landscape-640617_1280.jpg" alt="Paisaje relacionado al título">
         </section>
         <div>
-          <p>
+          <p class="paragraph-class">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
@@ -50,9 +59,9 @@
             in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <section>
+        <section class="secondary-section">
           <h2>Section title</h2>
-          <div>
+          <div class="column">
             <ul>
               <li>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -69,7 +78,7 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
               </li>
             </ul>
-            <p>
+            <p class="paragraph-class">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
