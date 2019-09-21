@@ -7,9 +7,9 @@
   </head>
   <body>
     <header>
-      <img src="images/antenna-602142_640.png" width="50" alt="Ejercicio sitio estático">
-      <nav>
-        <ul class="main-nav">
+      <img class="logo" src="images/antenna-602142_640.png" alt="Ejercicio sitio estático">
+      <nav class="main-nav">
+        <ul>
           <li>
             <a href="">Item 1</a>
           </li>
@@ -24,34 +24,35 @@
           </li>
         </ul>
       </nav>
-      <form>
+      <form class="search-form">
         <input type="text" name="search">
         <input type="submit" value="Buscar">
       </form>
     </header>
     <main>
       <article>
-        <section>
-          <h1 id="main-title">Great title</h1>
+        <section class="main-title">
+          <h1>Great title</h1>
           <p>Subtitle</p>
-          <p>Date</p>
-          <img src="images/landscape-640617_1280.jpg" alt="Paisaje relacionado al título">
+          <time>Date</time>
         </section>
-        <div>
-          <p class="paragraph-class">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt.  
-          </p>
+        <div class="main-column">
+          <div class="content-block">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt.
+            </p>
+          </div>
           <img src="images/knowledge-1052010_1280.jpg" alt="Libro abierto con lentes encima">
-          <p>
+          <p class="content-block quote">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
@@ -61,7 +62,7 @@
         </div>
         <section class="secondary-section">
           <h2>Section title</h2>
-          <div class="column">
+          <div class="columns">
             <ul>
               <li>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -78,7 +79,7 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
               </li>
             </ul>
-            <p class="paragraph-class">
+            <p class="content-block quote">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -88,45 +89,49 @@
           </div>
         </section>
       </article>
-      <aside>
-        <article>
-          <h3>Secondary title</h3>
-          <p>Date</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua.
-          </p>
-        </article>
-        <article>
-          <h3>Secondary title</h3>
-          <p>Date</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua.
-          </p>
-        </article>
-        <article>
-          <h3>Secondary title</h3>
-          <p>Date</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua.
-          </p>
-        </article>
+      <aside class="related-content">
+        <div class="columns">
+          <article>
+            <h3>Secondary title</h3>
+            <p>Date</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua.
+            </p>
+          </article>
+          <article>
+            <h3>Secondary title</h3>
+            <p>Date</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua.
+            </p>
+          </article>
+          <article>
+            <h3>Secondary title</h3>
+            <p>Date</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua.
+            </p>
+          </article>
+        </div>
       </aside>
-      <hr>
     </main>
     <footer>
-      <h4>Footer title</h4>
-      <form>
-        <input type="text" name="subscribe">
-        <input type="submit" value="Subscribe">
-      </form>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
-      </p>
+      <div class="footer-content">
+        <hr>
+        <h4>Footer title</h4>
+        <form>
+          <input type="text" name="subscribe">
+          <input type="submit" value="Subscribe">
+        </form>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

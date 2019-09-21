@@ -1,11 +1,22 @@
 /* Estilos generales */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
-  font-size: 24px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #5D5D5F;
+  margin: 0;
+  background-color: white;
 }
 
 p {
-  color: red;
+  line-height: 1.5;
+  margin: 0 0 20px;
 }
 
 a {
@@ -23,38 +34,132 @@ img {
 
 /* Header */
 
-main {
-  width: 90%;
-  margin: 0 auto;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #CCC;
 }
 
-main > article, main > aside {
-  border: 2px solid #CCC;
-  padding: 20px;
+header .logo {
+  width: 50px;
+  height: auto;
 }
 
-.main-nav  {
-  list-style-type: none;
+header .main-nav {
+  width: 70%;
+}
+
+header .search-form {
+  width: 20%
+}
+
+.main-nav ul{
   display: flex;
   justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Main */
 
-#main-title {
-  background-color: yellow;
-  font-size: 36px;
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../images/landscape-640617_1280.jpg') no-repeat center;
+  padding: 150px 100px;
+  color: white;
+}
+
+.main-title h1 {
+  font-size: 3em;
   text-align: center;
+  margin: 0 0 10px;
+}
+
+.main-title p {
+  margin: 0;
+  color: white;
+}
+
+.main-title time {
+  font-size: 0.6em;
+  text-transform: uppercase;
 }
 
 .paragraph-class {
   color: black;
 }
 
-.secondary-section .column ul,
-.secondary-section .column p {
+.main-column {
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.secondary-section {
+  background-color: #ffeed5;
+  padding: 20px 0;
+}
+
+.secondary-section h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.columns {
+  display: flex;
+  margin: 0 auto;
+}
+
+.content-block {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 25px;
+  padding: 50px;
+  position: relative;
+}
+
+.quote::before {
+  content: '"';
+  font-family: cursive;
+  font-size: 90px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  line-height: 100px;
+  padding-left: 8px;
+  transform: translateX(-50%);
+}
+
+.content-block p:last-child {
+  margin-bottom: 0;
+}
+
+.main-column img {
+  margin-bottom: 50px;
+}
+
+.secondary-section .columns {
+  width: 80%;
+}
+
+.secondary-section .columns ul,
+.secondary-section .columns p {
   width: 50%;
-  background-color: rgba(170, 170, 170, 0.4);
   color: yellow;
 }
 
@@ -63,6 +168,46 @@ main > article, main > aside {
   font-size: 24px;
 }
 
-.column {
+/* Main aside */
+
+.related-content {
   display: flex;
+  background-color: #444;
+  padding: 20px 0;
+}
+
+.related-content .columns {
+  width: 90%;
+}
+
+/* Footer */
+
+footer {
+  background-color: #444;
+}
+
+.footer-content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content hr {
+  width: 100%;
+  height: 5px;
+  background-color: red;
+  margin: 0 0 30px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.footer-content h4 {
+  margin: 0;
+}
+
+.footer-content p {
+  margin: 0;
 }
