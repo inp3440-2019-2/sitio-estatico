@@ -7,7 +7,9 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="images/antenna-602142_640.png" alt="Ejercicio sitio estático">
+      <a class="logo" href="">
+        <img src="images/antenna-602142_640.png" alt="Ejercicio sitio estático">
+      </a>
       <nav class="main-nav">
         <ul>
           <li>
@@ -24,18 +26,20 @@
           </li>
         </ul>
       </nav>
-      <form class="search-form">
-        <input type="text" name="search">
-        <input type="submit" value="Buscar">
+      <form class="general-form">
+        <input type="search" name="search" placeholder="Search">
+        <input type="submit" value="&#128269;">
       </form>
     </header>
     <main>
       <article>
-        <section class="main-title">
-          <h1>Great title</h1>
-          <p>Subtitle</p>
-          <time>Date</time>
-        </section>
+        <div class="main-title">
+          <section>
+            <h1>Great title</h1>
+            <p>Subtitle</p>
+            <time class="date-small">Date</time>
+          </section>
+        </div>
         <div class="main-column">
           <div class="content-block">
             <p>
@@ -93,7 +97,7 @@
         <div class="columns">
           <article>
             <h3>Secondary title</h3>
-            <p>Date</p>
+            <time class="date-small">Date</time>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua.
@@ -101,7 +105,7 @@
           </article>
           <article>
             <h3>Secondary title</h3>
-            <p>Date</p>
+            <time class="date-small">Date</time>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua.
@@ -109,7 +113,7 @@
           </article>
           <article>
             <h3>Secondary title</h3>
-            <p>Date</p>
+            <time class="date-small">Date</time>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua.
@@ -122,7 +126,7 @@
       <div class="footer-content">
         <hr>
         <h4>Footer title</h4>
-        <form>
+        <form class="general-form">
           <input type="text" name="subscribe">
           <input type="submit" value="Subscribe">
         </form>
