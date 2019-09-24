@@ -30,6 +30,10 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #5D5D5F;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header .logo {
@@ -53,14 +57,13 @@ header .general-form {
 
 .main-nav ul {
   display: flex;
-  justify-content: space-evenly;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .main-nav ul li {
-  width: 25%;
+  flex: 1;
   text-align: center;
   font-size: 0.8em;
 }
@@ -112,7 +115,7 @@ header .general-form {
 /* Main */
 
 .main-title {
-  background: url('../images/landscape-640617_1280.jpg') no-repeat center;
+  background: url('../images/landscape-640617_1280.jpg') no-repeat center/cover;
   padding: 100px 20%;
   color: white;
 }
