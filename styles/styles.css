@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: #5D5D5F;
   margin: 0;
@@ -29,7 +29,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #5D5D5F;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #5D5D5F;
   background-color: white;
   position: sticky;
   top: 0;
@@ -64,16 +65,21 @@ header .general-form {
 
 .main-nav ul li {
   flex: 1;
-  text-align: center;
   font-size: 0.8em;
 }
 
 .main-nav ul li a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #5D5D5F;
   padding: 20px 0;
-  width: 100%;
+}
+
+.main-nav i {
+  border: 2px solid #5D5D5F;
+  margin-right: 5px;
 }
 
 .main-nav ul li a:hover {
@@ -81,11 +87,15 @@ header .general-form {
   color: white;
 }
 
+.main-nav ul li a:hover i {
+  border-color: white;
+}
+
 .general-form {
   display: flex;
 }
 
-.general-form input {
+.general-form input, .general-form button {
   border: 1.5px solid rgba(93, 93, 95, 0.6);
 }
 
@@ -103,11 +113,12 @@ header .general-form {
   border-color: #5D5D5F;
 }
 
-.general-form input[type="submit"] {
+.general-form button {
   background-color: #5D5D5F;
+  color: white;
 }
 
-.general-form input[type="submit"]:hover {
+.general-form button:hover {
   background-color: rgba(93, 93, 95, 0.8);
   cursor: pointer;
 }
@@ -226,6 +237,7 @@ header .general-form {
 
 .related-content {
   display: flex;
+  flex-wrap: wrap;
   background-color: #5D5D5F;
   color: white;
   padding: 50px 0 20px;
@@ -240,6 +252,7 @@ header .general-form {
   background-color: #444;
   border-radius: 10px;
   margin-right: 20px;
+  width: calc((100% - 40px) / 3);
   display: flex;
   flex-direction: column;
 }
