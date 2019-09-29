@@ -183,9 +183,9 @@ header .general-form {
 }
 
 .quote::before {
-  content: '"';
-  font-family: cursive;
-  font-size: 90px;
+  content: 'format_quote';
+  font-family: 'Material Icons';
+  font-size: 60px;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0.5;
   border-radius: 50%;
@@ -194,9 +194,9 @@ header .general-form {
   position: absolute;
   left: 50%;
   top: -30px;
-  line-height: 100px;
-  padding-left: 8px;
-  transform: translateX(-50%);
+  line-height: 1;
+  transform: translateX(-50%) rotate(180deg);
+  -webkit-font-feature-settings: 'liga';
 }
 
 .columns {
